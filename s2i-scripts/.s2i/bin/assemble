@@ -10,8 +10,14 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
+echo "---> Installing application source from Eman"
+cp -Rf /tmp/src/*.html ./
+
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
+
+echo "---> Installing test page from Eman"
+echo "Build new test page" >> ./test.html
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
